@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AB DIGITECH — Independent Mobile Games</title>
+  <meta name="description" content="AB DIGITECH, Alen Brunec, s.p. — independent mobile game developer based in Slovenia. Home of Bubble Balls and more.">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="canonical" href="https://abdigitech.net/">
+  <style>
+    :root {
+      --bg: #071526;
+      --panel: #0f2744;
+      --text: #e8f1ff;
+      --muted: #9bb3d1;
+      --accent: #3db4ff;
+      --accent-2: #7ef0c5;
+      --card: #132f52;
+      --border: rgba(255,255,255,.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #163a66 0%, transparent 55%),
+                  radial-gradient(900px 500px at 100% 0%, #0d3a3a 0%, transparent 50%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 48px 24px 72px; }
+    header {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; margin-bottom: 40px;
+    }
+    .brand { font-weight: 700; letter-spacing: .04em; font-size: 1.15rem; }
+    .brand span { color: var(--accent-2); }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; font-size: .95rem; }
+    nav a { color: var(--muted); }
+    nav a:hover { color: var(--text); }
+    .hero {
+      background: linear-gradient(145deg, rgba(61,180,255,.12), rgba(126,240,197,.06));
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 40px 32px;
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.15;
+    }
+    .hero p { margin: 0; color: var(--muted); max-width: 62ch; font-size: 1.05rem; }
+    .badge {
+      display: inline-block; margin-bottom: 14px;
+      padding: 6px 12px; border-radius: 999px;
+      background: rgba(126,240,197,.12); color: var(--accent-2);
+      font-size: .8rem; letter-spacing: .04em; text-transform: uppercase;
+    }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+      margin: 20px 0;
+    }
+    section h2 { margin: 0 0 14px; font-size: 1.25rem; }
+    .games { display: grid; gap: 16px; }
+    .game {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px 22px;
+      display: flex; flex-wrap: wrap; gap: 12px 20px;
+      align-items: center; justify-content: space-between;
+    }
+    .game h3 { margin: 0 0 4px; font-size: 1.1rem; }
+    .game p { margin: 0; color: var(--muted); font-size: .95rem; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #04111f !important;
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none !important;
+    }
+    .btn:hover { filter: brightness(1.08); }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .muted { color: var(--muted); }
+    footer {
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: .9rem;
+      display: flex; flex-wrap: wrap; gap: 12px 24px;
+      justify-content: space-between;
+    }
+    .sl { font-size: .95rem; color: var(--muted); margin-top: 18px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">AB <span>DIGITECH</span></div>
+      <nav>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="badge">Independent studio · Slovenia</div>
+      <h1>Mobile games with simple, addictive fun</h1>
+      <p>
+        AB DIGITECH, Alen Brunec, s.p. is an independent mobile game developer.
+        We build colorful arcade games for iOS and Android — starting with Bubble Balls.
+      </p>
+      <p class="sl">Samostojni razvijalec mobilnih iger iz Slovenije.</p>
+    </div>
+
+    <section id="games">
+      <h2>Games</h2>
+      <div class="games">
+        <div class="game">
+          <div>
+            <h3>Bubble Balls</h3>
+            <p>Tap-to-jump arcade. Collect hearts, dodge hazards, beat your best score.</p>
+          </div>
+          <a class="btn" href="https://brunec22.github.io/bubble-balls-site/">Support &amp; privacy</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="muted">
+        AB DIGITECH creates casual mobile experiences with a focus on polish, clarity, and player respect —
+        including transparent advertising and privacy choices where required.
+      </p>
+      <div class="grid-2" style="margin-top:18px">
+        <div>
+          <strong>Legal name</strong>
+          <p class="muted" style="margin:.35rem 0 0">AB DIGITECH, Alen Brunec, s.p.</p>
+        </div>
+        <div>
+          <strong>Address</strong>
+          <p class="muted" style="margin:.35rem 0 0">Dolnja Bistrica 57B<br>9232 Črenšovci<br>Slovenia</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="grid-2">
+        <div>
+          <strong>General</strong>
+          <p class="muted" style="margin:.35rem 0 0"><a href="mailto:info@abdigitech.net">info@abdigitech.net</a></p>
+        </div>
+        <div>
+          <strong>App support</strong>
+          <p class="muted" style="margin:.35rem 0 0"><a href="mailto:support@abdigitech.net">support@abdigitech.net</a></p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:18px">
+        For Bubble Balls help, include your device model, OS version, and a short description of the issue.
+        Do not send passwords or payment details.
+      </p>
+    </section>
+
+    <footer>
+      <div>© 2026 AB DIGITECH, Alen Brunec, s.p. · Slovenia</div>
+      <div>
+        <a href="privacy.html">Privacy policy</a>
+        ·
+        <a href="https://brunec22.github.io/bubble-balls-site/">Bubble Balls</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
